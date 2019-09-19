@@ -1,0 +1,27 @@
+{
+  "name": "micro-ui-app2",
+  "version": "1.0.0",
+  "description": "Micro UI 2: Vue + Webpack",
+  "main": "dist/micro-ui-app2.js",
+  "author": "Stefan Cameron",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf ./dist",
+    "prebuild": "yarn clean",
+    "build": "webpack --mode production"
+  },
+  "peerDependencies": {
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "babel-loader": "^8.0.6",
+    "babel-preset-vue": "^2.0.2",
+    "vue": "^2.6.10",
+    "vue-loader": "^15.7.1",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9"
+  }
+}

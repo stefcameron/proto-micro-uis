@@ -1,0 +1,35 @@
+{
+  "name": "micro-ui-main",
+  "version": "1.0.0",
+  "description": "Main container for all Micro UIs: React + Webpack",
+  "main": "index.js",
+  "author": "Stefan Cameron",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf ./dist",
+    "prebuild": "yarn clean",
+    "build": "webpack",
+    "start": "webpack-dev-server"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "@emotion/core": "^10.0.17",
+    "@emotion/styled": "^10.0.17",
+    "babel-loader": "^8.0.6",
+    "emotion-theming": "^10.0.19",
+    "history": "^4.10.1",
+    "html-webpack-plugin": "^3.2.0",
+    "micro-ui-app1": "1.0.0",
+    "micro-ui-app2": "1.0.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1",
+    "vue": "^2.6.10",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1"
+  }
+}

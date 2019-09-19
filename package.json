@@ -1,0 +1,20 @@
+{
+  "name": "proto-micro-uis",
+  "version": "1.0.0",
+  "description": "Prototype for microservice UIs using https://single-spa.js.org to compose them",
+  "repository": "git@github.com:stefcameron/proto-micro-uis.git",
+  "author": "Stefan Cameron",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "clean": "yarn workspace micro-ui-app1 clean && yarn workspace micro-ui-app2 clean && yarn workspace micro-ui-main clean",
+    "build": "yarn workspace micro-ui-app1 build && yarn workspace micro-ui-app2 build && yarn workspace micro-ui-main build",
+    "start": "yarn workspace micro-ui-main start"
+  },
+  "workspaces": [
+    "main",
+    "app1",
+    "app2"
+  ]
+}
+
