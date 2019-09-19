@@ -61,7 +61,7 @@ typings/
 .next
 
 # build output directories
-build/
+dist/
 
 # IDE configs
 *.idea
