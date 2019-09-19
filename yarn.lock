@@ -1943,6 +1943,11 @@ date-now@^0.1.4:
   resolved "https://registry.yarnpkg.com/date-now/-/date-now-0.1.4.tgz#eaf439fd4d4848ad74e5cc7dbef200672b9e345b"
   integrity sha1-6vQ5/U1ISK105cx9vvIAZyueNFs=
 
+de-indent@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/de-indent/-/de-indent-1.0.2.tgz#b2038e846dc33baa5796128d0804b455b8c1e21d"
+  integrity sha1-sgOOhG3DO6pXlhKNCAS0VbjB4h0=
+
 debug@2.6.9, debug@^2.2.0, debug@^2.3.3:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
@@ -2203,15 +2208,6 @@ emojis-list@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/emojis-list/-/emojis-list-2.1.0.tgz#4daa4d9db00f9819880c79fa457ae5b09a1fd389"
   integrity sha1-TapNnbAPmBmIDHn6RXrlsJof04k=
-
-emotion-theming@^10.0.19:
-  version "10.0.19"
-  resolved "https://registry.yarnpkg.com/emotion-theming/-/emotion-theming-10.0.19.tgz#66d13db74fccaefad71ba57c915b306cf2250295"
-  integrity sha512-dQRBPLAAQ6eA8JKhkLCIWC8fdjPbiNC1zNTdFF292h9amhZXofcNGUP7axHoHX4XesqQESYwZrXp53OPInMrKw==
-  dependencies:
-    "@babel/runtime" "^7.5.5"
-    "@emotion/weak-memoize" "0.2.4"
-    hoist-non-react-statics "^3.3.0"
 
 encodeurl@~1.0.2:
   version "1.0.2"
@@ -2816,7 +2812,7 @@ hash.js@^1.0.0, hash.js@^1.0.3:
     inherits "^2.0.3"
     minimalistic-assert "^1.0.1"
 
-he@1.2.x:
+he@1.2.x, he@^1.1.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
   integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
@@ -2842,7 +2838,7 @@ hmac-drbg@^1.0.0:
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.1"
 
-hoist-non-react-statics@^3.1.0, hoist-non-react-statics@^3.3.0:
+hoist-non-react-statics@^3.1.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.0.tgz#b09178f0122184fb95acf525daaecb4d8f45958b"
   integrity sha512-0XsbTXxgiaCDYDIWFcwkmerZPSwywfUqYmwT4jzewKTQSWoE6FCMoUVOeBJWK3E/CrWbxRG3m5GzY4lnIwGRBA==
@@ -4987,6 +4983,21 @@ signal-exit@^3.0.0:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
   integrity sha1-tf3AjxKH6hF4Yo5BXiUTK3NkbG0=
 
+single-spa-react@^2.10.2:
+  version "2.10.2"
+  resolved "https://registry.yarnpkg.com/single-spa-react/-/single-spa-react-2.10.2.tgz#5033d454a9299170e5cc086b07f319862ee459c7"
+  integrity sha512-8zOQJRDdZ5Uo7K2RutBiapKuNvlP9Sw3qeQYN1nhSvouc4M/NpIWA1VIsDkv4JUka7zG0eRd5CEbDYN6zz6lYA==
+
+single-spa-vue@^1.5.4:
+  version "1.5.4"
+  resolved "https://registry.yarnpkg.com/single-spa-vue/-/single-spa-vue-1.5.4.tgz#28290b8992a0e9868edf4d28e4ad997822039576"
+  integrity sha512-V88oZ941b+I1ZXoW77B7YyOvbuB3BvooxySFe05TkB6vUxnP3bcHo/klkyuUojmgi+1NaDeVhfQUoFU29CWGKw==
+
+single-spa@^4.4.1:
+  version "4.4.1"
+  resolved "https://registry.yarnpkg.com/single-spa/-/single-spa-4.4.1.tgz#660a0e5f93f7e7d06fc40e2b126b81102f0741af"
+  integrity sha512-em6ZGRbLUilaiPrR+XKHT4/qjX07ijbO75PLtN6/d3DykDVioqK8bE1W+KTOJpRf0vDoq3lV+oP9TVz/fvP/YA==
+
 snapdragon-node@^2.0.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/snapdragon-node/-/snapdragon-node-2.1.1.tgz#6c175f86ff14bdb0724563e8f3c1b021a286853b"
@@ -5628,6 +5639,14 @@ vue-style-loader@^4.1.0:
   dependencies:
     hash-sum "^1.0.2"
     loader-utils "^1.0.2"
+
+vue-template-compiler@^2.6.10:
+  version "2.6.10"
+  resolved "https://registry.yarnpkg.com/vue-template-compiler/-/vue-template-compiler-2.6.10.tgz#323b4f3495f04faa3503337a82f5d6507799c9cc"
+  integrity sha512-jVZkw4/I/HT5ZMvRnhv78okGusqe0+qH2A0Em0Cp8aq78+NK9TII263CDVz2QXZsIT+yyV/gZc/j/vlwa+Epyg==
+  dependencies:
+    de-indent "^1.0.2"
+    he "^1.1.0"
 
 vue-template-es2015-compiler@^1.9.0:
   version "1.9.1"

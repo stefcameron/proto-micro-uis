@@ -1,31 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import singleSpaReact from 'single-spa-react';
+import App, { appId } from './App';
 
-const appId = 'micro-ui-app1';
+const domElementGetter = function() {
+  return document.getElementById(appId);
+}
 
-const TodoItem = function(props) {
-  return (
-    <li>{props.item.text}</li>
-  );
-};
+const reactLifecycles = singleSpaReact({
+  React,
+  ReactDOM,
+  rootComponent: App,
+  domElementGetter,
+});
 
-const App = function() {
-  const todos = [
-    { text: 'Learn React' },
-    { text: 'Build something awesome' }
-  ];
+export const bootstrap = [
+  reactLifecycles.bootstrap
+];
 
-  return (
-    <div data-testid={appId}>
-      <p>{appId}: React + Rollup</p>
-      <ol>
-        {todos.map((todo) => <TodoItem item={todo} />)}
-      </ol>
-    </div>
-  );
-};
+export const mount = [
+  reactLifecycles.mount
+];
 
-ReactDOM.render(
-  <App />,
-  document.getElementById(appId)
-);
+export const unmount = [
+  reactLifecycles.unmount
+];

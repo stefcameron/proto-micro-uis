@@ -12,20 +12,29 @@
     "build": "rollup -c rollup.config.js"
   },
   "peerDependencies": {
+    "@emotion/core": "^10.0.17",
+    "@emotion/styled": "^10.0.17",
+    "history": "^4.10.1",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",
     "@babel/preset-env": "^7.6.0",
     "@babel/preset-react": "^7.0.0",
+    "@emotion/core": "^10.0.17",
+    "@emotion/styled": "^10.0.17",
+    "history": "^4.10.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1",
     "rollup": "^1.21.4",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-json": "^4.0.0",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-uglify": "^6.0.3"
+    "rollup-plugin-uglify": "^6.0.3",
+    "single-spa-react": "^2.10.2"
   }
 }

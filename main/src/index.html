@@ -7,6 +7,18 @@
   <title>Micro UI Prototype</title>
 </head>
 <body>
-  <div id="app"></div>
+  <!-- these are the 'mount points' that each app, including the main app, is configured to use -->
+  <div id="micro-ui-main"></div>
+  <div id="micro-ui-app1"></div>
+  <div id="micro-ui-app2"></div>
+
+  <!--
+    TODO: I couldn't figure-out how to force Webpack to bundle the Vue runtime
+     when nothing in the main app references Vue (since it's only app2, which
+     is dynamically loaded at runtime). The Internet doesn't seem to know how
+     to do this. Perhaps it's super simple, but this was the easiest hack I
+     could think of to get the prototype running.
+  -->
+  <script src="https://unpkg.com/browse/vue@2.6.10/dist/vue.min.js"></script>
 </body>
 </html>

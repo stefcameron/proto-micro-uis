@@ -26,7 +26,14 @@ module.exports = {
     jsonPlugin(),
     resolvePlugin(),
     cjsPlugin({
-      include: 'node_modules/**'
+      include: [
+        'node_modules/**',
+
+        // NOTE: this explicit path is required in order for this plugin to find
+        //  the default export in this package
+        // @see https://github.com/rollup/rollup-plugin-commonjs/issues/139#issuecomment-383884413
+        '../node_modules/single-spa-react/lib/single-spa-react.js'
+      ]
     }),
     babelPlugin({
       exclude: 'node_modules/**'

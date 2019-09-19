@@ -1,14 +1,14 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const pkg = require('./package.json');
 const SRC_PATH = path.resolve(__dirname, 'src');
 const DEST_PATH = path.resolve(__dirname, 'dist');
 
 module.exports = {
-  name: 'main',
-  mode: 'production',
-  entry: `${SRC_PATH}/index.js`,
+  devtool: 'source-map',
+  entry: {
+    index: `${SRC_PATH}/index.js`
+  },
   optimization: {
     splitChunks: {
       cacheGroups: {
@@ -24,7 +24,8 @@ module.exports = {
   performance: {hints: false},
   output: {
     path: DEST_PATH,
-    filename: '[name].bundle.[hash].js'
+    filename: '[name].bundle.[hash].js',
+    publicPath: '/'
   },
   module: {
     rules: [
@@ -40,6 +41,7 @@ module.exports = {
   plugins: [new HtmlWebpackPlugin({template: `${SRC_PATH}/index.html`})],
   devServer: {
     contentBase: DEST_PATH,
+    publicPath: '/',
     port: 3000,
     open: 'Google Chrome Canary',
     watchContentBase: true,
