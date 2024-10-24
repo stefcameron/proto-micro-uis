@@ -12,7 +12,7 @@
     "build": "webpack --mode production"
   },
   "peerDependencies": {
-    "vue": "^2.6.10"
+    "vue": "^3.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",
@@ -20,7 +20,7 @@
     "babel-loader": "^8.0.6",
     "babel-preset-vue": "^2.0.2",
     "single-spa-vue": "^1.5.4",
-    "vue": "^2.6.10",
+    "vue": "^3.0.0",
     "vue-loader": "^15.7.1",
     "vue-template-compiler": "^2.6.10",
     "webpack": "^5.94.0",
